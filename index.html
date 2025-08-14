@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/group-project-Furniture-Store/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меблерія</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/css-star-rating/css/star-rating.min.css"
+    />
+
+    <script type="module" crossorigin src="/group-project-Furniture-Store/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/group-project-Furniture-Store/assets/vendor-CC0EzOv2.js">
+    <link rel="stylesheet" crossorigin href="/group-project-Furniture-Store/assets/vendor-B-K006-G.css">
+    <link rel="stylesheet" crossorigin href="/group-project-Furniture-Store/assets/index-DuDB7gyp.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <a href="index.html" class="header-logo"
+      ><svg class="header-socials-icon" width="163" height="69">
+        <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#logo"></use></svg
+    ></a>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#furniture-list" class="nav-link">Наші меблі</a></li>
+        <li><a href="#about-us" class="nav-link">Про нас</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#feedback" class="nav-link">Відгуки</a></li>
+      </ul>
+    </nav>
+
+    <a href="#furniture-list" class="btn-buy">До покупок</a>
+
+    <button class="burger" aria-expanded="false">
+      <svg class="icon icon-menu" width="32" height="32">
+        <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <!-- MENU -->
+
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <a href="index.html" class="mobile-header-logo"
+      ><svg class="header-socials-icon" width="163" height="69">
+        <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#logo"></use></svg
+    ></a>
+
+    <button type="button" class="modal-window-close-btn">
+      <svg class="modal-window-close-svg" width="32" height="32">
+        <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-x"></use>
+      </svg>
+    </button>
+    <nav class="mobile-panel">
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="#furniture-list" class="mobile-nav-link">Наші меблі</a>
+        </li>
+        <li><a href="#about-us" class="mobile-nav-link">Про нас</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Часті питання</a></li>
+        <li><a href="#feedback" class="mobile-nav-link">Відгуки</a></li>
+      </ul>
+      <a href="#furniture-list" class="btn-buy-mobile">До покупок</a>
+    </nav>
+  </div>
+</div>
+
+    <div id="loader" class="loader hidden" aria-label="Завантаження...">
+  <div class="spinner"></div>
+  <p class="loader-text">Завантаження сторінки...</p>
+</div>
+
+    <main>
+      <!-- Loads the specified .html file -->
+      <section class="hero-section">
+  <div class="container">
+    <div class="hero-container">
+      <h1 class="hero-title">Створіть свій ідеальний дім</h1>
+      <p class="hero-text">
+        Відкрийте для себе колекцію стильних та комфортних меблів, які
+        перетворять ваш простір. Наша продукція поєднує в собі елегантність та
+        функціональність.
+      </p>
+      <a href="#feedback" class="hero-btn">Що про нас думають</a>
+    </div>
+  </div>
+</section>
+
+      <section class="furniture-list-section" id="furniture-list">
+  <div class="container">
+    <div class="container-furniture-list-section">
+      <h2 class="title-list-section-iv">Наші меблі</h2>
+      <p class="text-list-section-iv">
+        Знайдіть ідеальні рішення для вашого інтер'єру
+      </p>
+      <ul class="menu-list-section-iv">
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-one btn-list-section-iv"
+          >
+            <span class="text-btn-list-iv">Всі товари</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-two btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7b8"
+          >
+            <span class="text-btn-list-iv">М'які меблі</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-three btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7b9"
+          >
+            <span class="text-btn-list-iv">Шафи та системи зберігання</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-for btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7ba"
+          >
+            <span class="text-btn-list-iv">Ліжка та матраци</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-five btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7bb"
+          >
+            <span class="text-btn-list-iv">Столи</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-six btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7bc"
+          >
+            <span class="text-btn-list-iv">Стільці та табурети</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-sev btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7bd"
+          >
+            <span class="text-btn-list-iv">Кухні</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-eig btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7be"
+          >
+            <span class="text-btn-list-iv">Меблі для дитячої</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-nine btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7bf"
+          >
+            <span class="text-btn-list-iv">Меблі для офісу</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-ten btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7c0"
+          >
+            <span class="text-btn-list-iv">Меблі для передпокою</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-el btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7c1"
+          >
+            <span class="text-btn-list-iv">Меблі для ванної кімнати</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-tw btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7c2"
+          >
+            <span class="text-btn-list-iv">Садові та вуличні меблі</span>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="image-btn-list-all fl-thir btn-list-section-iv"
+            data-id="66504a50a1b2c3d4e5f6a7c3"
+          >
+            <span class="text-btn-list-iv">Декор та аксесуари</span>
+          </button>
+        </li>
+      </ul>
+
+      <ul class="furniture-list-render"></ul>
+      <button type="button" class="btn-load-more-list hidden">
+        Показати ще
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section class="about-us-section" id="about-us">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2 class="about-title">Про Меблерію</h2>
+        <p class="about-description">
+          У Меблерії ми прагнемо створювати затишок та функціональність у
+          кожному домі. Наша місія - пропонувати високоякісні меблі, що
+          поєднують у собі сучасний дизайн, довговічність та доступність. Ми
+          віримо, що ідеальний інтер'єр починається з правильних меблів.
+        </p>
+      </div>
+      <div class="about-image">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="/group-project-Furniture-Store/assets/about-1x-CT94WERC.jpg 1x, /group-project-Furniture-Store/assets/about-2x-DGAJ_BZo.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/group-project-Furniture-Store/assets/about-tab-1x-CtbtqGEV.jpg 1x, /group-project-Furniture-Store/assets/about-tab-2x-XOIufj4f.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/group-project-Furniture-Store/assets/about-mob-1x-BqKAP-eH.jpg 1x, /group-project-Furniture-Store/assets/about-mob-2x-BIAWCtaK.jpg 2x"
+          />
+          <img
+            src="/group-project-Furniture-Store/assets/about-1x-CT94WERC.jpg"
+            alt="Команда Меблерії за роботою"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="popular-products-section">
+  <div class="container">
+    <h2 class="popular-products-title">Популярні товари</h2>
+    <!-- <ul class="popular-products-list-render"></ul> -->
+    
+
+        <!-- Swiper -->
+        <div class="popular-products-swiper swiper">
+          <div id="popular-products-list" class="swiper-wrapper">
+  
+          </div>
+    
+          <!-- Пагінація -->
+          <div class="pagination-container">
+            <div class="swiper-pagination"></div>
+    
+            <!-- Кнопки навігації -->
+            <div class="swiper-button-container">
+              <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Попередній товар"
+              >
+                <svg class="arrow-icon" width="24" height="24">
+                  <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-left-arrow-alt"></use>
+                </svg>
+              </button>
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Наступний товар"
+              >
+                <svg class="arrow-icon" width="24" height="24">
+                  <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-right-arrow-alt"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+      <section id="faq" class="faq-section">
+  <div class="container">
+    <h2 class="secondary-heading">Часті питання</h2>
+    <div class="accordion-container">
+      <div class="ac">
+        <p class="ac-header">
+          <button type="button" class="ac-trigger">
+            Як здійснюється доставка меблів?
+            <svg width="32" height="32" class="ac-trigger-icon">
+              <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+        </p>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Ми доставляємо замовлення по всій Україні через надійні служби.
+            Термін доставки зазвичай складає 3–7 днів залежно від регіону.
+          </p>
+        </div>
+      </div>
+      <div class="ac">
+        <p class="ac-header">
+          <button type="button" class="ac-trigger">
+            Чи є можливість вибрати колір або матеріал?
+            <svg width="32" height="32" class="ac-trigger-icon">
+              <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+        </p>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Так, у багатьох моделях доступні варіанти оббивки та кольорів. Усі
+            доступні опції вказані на сторінці товару.
+          </p>
+        </div>
+      </div>
+      <div class="ac">
+        <p class="ac-header">
+          <button type="button" class="ac-trigger">
+            Чи можна повернути товар, якщо він не підійшов?
+            <svg width="32" height="32" class="ac-trigger-icon">
+              <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+        </p>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Так, ви можете повернути товар протягом 14 днів, якщо він не був у
+            користуванні та збережений у первинному вигляді.
+          </p>
+        </div>
+      </div>
+      <div class="ac">
+        <p class="ac-header">
+          <button type="button" class="ac-trigger">
+            Чи надаєте ви послугу збирання меблів?
+            <svg width="32" height="32" class="ac-trigger-icon">
+              <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+        </p>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Так, під час оформлення замовлення можна обрати послугу збирання.
+            Наші майстри зберуть меблі у зручний для вас час.
+          </p>
+        </div>
+      </div>
+      <div class="ac">
+        <p class="ac-header">
+          <button type="button" class="ac-trigger">
+            Як здійснити оплату?
+            <svg width="32" height="32" class="ac-trigger-icon">
+              <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+        </p>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Ми приймаємо оплату карткою онлайн, банківським переказом або
+            післяплатою при отриманні.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="feedback-section" id="feedback">
+  <div class="container">
+    <h2 class="feedback-title">Відгуки Клієнтів</h2>
+    <p class="feedback-subtitle">
+      Дізнайтеся, що кажуть наші задоволені клієнти про наші меблі
+    </p>
+
+    <!-- Swiper -->
+    <div class="feedback-swiper swiper">
+      <div id="feedback-list" class="swiper-wrapper">
+        <!-- Картки з відгуками будуть динамічно вставлятись через JS -->
+      </div>
+
+      <!-- Пагінація -->
+      <div class="pagination-container">
+        <div class="swiper-pagination"></div>
+
+        <!-- Кнопки навігації -->
+        <div class="swiper-button-container">
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Попередній відгук"
+          >
+            <svg class="arrow-icon" width="24" height="24">
+              <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-left-arrow-alt"></use>
+            </svg>
+          </button>
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Наступний відгук"
+          >
+            <svg class="arrow-icon" width="24" height="24">
+              <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-right-arrow-alt"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <a href="index.html" class="footer-logo">
+      <svg class="footer-socials-icon" width="221" height="50">
+        <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#logo"></use>
+      </svg>
+    </a>
+
+    <div class="footer-wrap-container">
+      <div class="footer-list-container">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-list-item"><a href="#furniture-list">Наші меблі</a></li>
+          <li class="footer-nav-list-item"><a href="#about-us">Про нас</a></li>
+          <li class="footer-nav-list-item"><a href="#faq">Часті питання</a></li>
+          <li class="footer-nav-list-item"><a href="#feedback">Відгуки</a></li>
+        </ul>
+
+        <ul class="footer-socials-list">
+          <li class="footer-socials-list-item">
+            <a href="https://www.youtube.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="YouTube (відкриється у новій вкладці)">
+              <svg class="footer-socials-icon" width="24" height="24">
+                <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-Youtube"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer-socials-list-item">
+            <a href="https://www.instagram.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram (відкриється у новій вкладці)">
+              <svg class="footer-socials-icon footer-socials-icon-current" width="24" height="24">
+                <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-Instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer-socials-list-item">
+            <a href="https://www.facebook.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Facebook (відкриється у новій вкладці)">
+              <svg class="footer-socials-icon" width="24" height="24">
+                <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-Facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="footer-text">&copy; 2025 Relume. Всі права захищені.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <div class="furniture-details-modal">
+  <div class="container">
+    <div class="furniture-modal-content">
+      <button class="modal-furnt-close-btn" type="button">
+        <svg width="32" height="32" class="modal-close-btn-svg">
+          <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-x"></use>
+        </svg>
+      </button>
+      <div class="furniture-modal-product" id="productModalContainer"></div>
+    </div>
+  </div>
+</div>
+
+    <div class="order-modal">
+  <div class="container order-modal-window">
+    <button type="button" class="modal-window-close-order-btn">
+      <svg class="modal-window-close-svg" width="32" height="32">
+        <use href="/group-project-Furniture-Store/assets/sprite-DGKBa4KI.svg#icon-x"></use>
+      </svg>
+    </button>
+    <p class="modal-window-text">Замовлення та зворотній зв’язок</p>
+
+    <form class="modal-window-form">
+      <label class="modal-window-label" for="user-email">Email*</label>
+
+      <input
+        id="user-email"
+        class="modal-window-input"
+        type="email"
+        name="user-email"
+        placeholder="example@gmail.com"
+        required
+      />
+
+      <label class="modal-window-label" for="user-tel">Телефон*</label>
+
+      <input
+        id="user-tel"
+        class="modal-window-input"
+        type="tel"
+        name="user-tel"
+        placeholder="+38 (067) 000 00 00"
+        required
+      />
+
+      <label class="modal-window-label" for="user-comment">Коментар</label>
+      <textarea
+        class="modal-window-textarea"
+        id="user-comment"
+        name="user-comment"
+        placeholder="Type your message..."
+      ></textarea>
+      <button class="order-modal-btn" type="submit">Надіслати заявку</button>
+    </form>
+  </div>
+</div>
+
+
+  </body>
+</html>
